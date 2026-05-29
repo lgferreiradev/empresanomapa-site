@@ -54,7 +54,7 @@ export default function Fechamento() {
 
           {/* Instagram — ghost */}
           <a
-            href="https://instagram.com/guilhermeferreira"
+            href="https://www.instagram.com/guiilherme.f01?igsh=OXllZ3I3azM5eTZu&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-xl border border-white/[0.08] px-6 py-3.5 font-mono text-sm text-ink-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-white/[0.15] hover:text-ink-100"

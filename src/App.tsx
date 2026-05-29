@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Loader from "@/components/empresanomapa/Loader";
 import Hero from "@/components/empresanomapa/Hero";
@@ -9,8 +10,9 @@ import Trabalhos from "@/components/empresanomapa/Trabalhos";
 import ComoTrabalho from "@/components/empresanomapa/ComoTrabalho";
 import Fechamento from "@/components/empresanomapa/Fechamento";
 import Rodape from "@/components/empresanomapa/Rodape";
+import MeusLinks from "@/pages/MeusLinks";
 
-export default function App() {
+function Home() {
   const [loaded, setLoaded] = useState(false);
   const handleComplete = useCallback(() => setLoaded(true), []);
 
@@ -38,5 +40,16 @@ export default function App() {
         </main>
       )}
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/meuslinks" element={<MeusLinks />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

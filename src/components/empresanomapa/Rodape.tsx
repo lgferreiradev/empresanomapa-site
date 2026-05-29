@@ -24,7 +24,7 @@ export default function Rodape() {
             </svg>
           </a>
           <a
-            href="https://instagram.com/guilhermeferreira"
+            href="https://www.instagram.com/guiilherme.f01?igsh=OXllZ3I3azM5eTZu&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="text-ink-500 transition-colors hover:text-ink-100"
